@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "peminjamen",
+  "info": {
+    "singularName": "peminjaman",
+    "pluralName": "peminjamen",
+    "displayName": "Peminjaman",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "anggota": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::anggota.anggota"
+    },
+    "jangka": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "jumlah": {
+      "type": "biginteger"
+    },
+    "sisa": {
+      "type": "biginteger"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "angsurans",
+  "info": {
+    "singularName": "angsuran",
+    "pluralName": "angsurans",
+    "displayName": "Angsuran"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "peminjaman": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::peminjaman.peminjaman"
+    },
+    "jumlah": {
+      "type": "biginteger"
+    }
+  }
+}

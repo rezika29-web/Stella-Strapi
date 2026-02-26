@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transaksis",
+  "info": {
+    "singularName": "transaksi",
+    "pluralName": "transaksis",
+    "displayName": "Transaksi",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "jumlah": {
+      "type": "biginteger"
+    },
+    "jenis": {
+      "type": "string"
+    },
+    "anggota": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::anggota.anggota"
+    }
+  }
+}
